@@ -14,14 +14,15 @@ const nextConfig = {
     output: "export",
     transpilePackages: ["@arco-design/web-react"],
 
-    // async rewrites() {
-    //     return [
-    //         {
-    //             source: "/api/:path*",
-    //             destination: `http://localhost:3000/:path*`,
-    //         },
-    //     ];
-    // },
+    //TODO previously uncommented... ARA
+    async rewrites() {
+        return [
+            {
+                source: "/api/:path*",
+                destination: `http://localhost:3000/:path*`,
+            },
+        ];
+    },
 };
 
 module.exports = nextConfig;
