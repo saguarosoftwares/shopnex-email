@@ -51,9 +51,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build with Next.js (static export)
-        run: |
-          pnpm build
-          pnpm next export
+        run: pnpm build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
