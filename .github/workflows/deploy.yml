@@ -53,7 +53,7 @@ jobs:
       - name: Build with Next.js (static export)
         run: pnpm build
         env:
-          NEXT_PUBLIC_SERVER_URL: ${{ secrets.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000' }}
+          NEXT_PUBLIC_SERVER_URL: ${{ secrets.NEXT_PUBLIC_SERVER_URL || 'https://pr.eurovideopro.com' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
